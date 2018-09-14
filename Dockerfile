@@ -18,7 +18,7 @@ RUN apt-get -y update && apt-get -y install \
     libpcre3 libpcre3-dev \
     libmysqlclient-dev
 
-RUN cd /usr/local/src/ && git clone -b v2.1.1 https://github.com/matsumotory/ngx_mruby.git
+RUN cd /usr/local/src/ && git clone -b v2.1.2 https://github.com/matsumotory/ngx_mruby.git
 ENV NGINX_CONFIG_OPT_ENV \
       --with-http_stub_status_module \
       --with-http_ssl_module --prefix=/usr/local/nginx \
