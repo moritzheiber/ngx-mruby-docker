@@ -1,5 +1,5 @@
 FROM ubuntu:14.04
-MAINTAINER saboyutaka
+LABEL maintainer saboyutaka "saboyutaka<yutaka.paradigm.shift@gmail.com>"
 
 RUN apt-get -y update && apt-get -y install \
     sudo \
